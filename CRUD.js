@@ -41,4 +41,15 @@ console.log(updatedUser);
 // const updatedUser=await userToBeUpdated.save()
 // console.log("updated User: ", updatedUser);
 
+//Delete One Operation
+
+// const deletedUser=await User.deleteOne({firstname:"Akash"})
+//return Objected that includes { acknowledged: true, deletedCount: 1 }
+//To delete multiple entries:    User.deleteMany({filter})
+// console.log("Deleted Value: " ,deletedUser);
+
+
+
+
+
 disconnectDB()

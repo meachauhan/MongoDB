@@ -97,3 +97,11 @@ export const User= mongoose.model("User",userSchema)
     )
     console.log(updatedUser);
 ```
+
+### 6. Delete One Operation
+
+```javascript
+    const deletedUser=await User.deleteOne({firstname:"Akash"})
+    //return Objected that includes { acknowledged: true, deletedCount: 1 }
+    console.log("Deleted Value: " ,deletedUser);
+```
