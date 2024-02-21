@@ -16,7 +16,7 @@ const disconnectDB=async () =>{
         const closeDb=connection.disconnect()
         console.log("MongoDB Disconnected Successfully");
     } catch (error) {
-        console.log("MongoDB Error: ", error)
+        console.log("MongoDB disconnect Error: ", error)
         process.exit(1)
     }
 }
